@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Input from './componets/inputbox/Input';
+import Submit from './componets/button/Submit';
+import shwetaom  from './image/misslovely.jpeg'
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <h3>LOGIN </h3>
+       {/* props */}
+      <Input type="text"  holder="username"/>
+      <br/> 
+      <Input type="password" holder="enter your password " />
+      <br/>
+      <Submit/>
+      <br/> 
+      <img src={shwetaom}/>
     </div>
   );
 }
